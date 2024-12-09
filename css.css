@@ -1,0 +1,198 @@
+/* Importação de fontes */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+    line-height: 1.6;
+}
+.projeto a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+}
+
+.projeto:hover {
+    transform: scale(1.02);
+}
+
+.projeto img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.projeto h3, .projeto p {
+    margin-top: 10px;
+}
+/* Estilo do cabeçalho */
+.header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header h1 {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+nav a i {
+    margin-right: 8px;
+}
+
+nav a:hover {
+    color: #777;
+}
+
+/* Estilo das seções */
+.section {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #000;
+    text-transform: uppercase;
+    border-bottom: 2px solid #000;
+    display: inline-block;
+}
+
+/* Grid dos projetos com duas colunas */
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    gap: 20px;
+}
+
+/* Para dispositivos menores (telas de até 768px de largura), será apenas uma coluna */
+@media (max-width: 768px) {
+    .projetos-grid {
+        grid-template-columns: 1fr; /* 1 coluna em telas pequenas */
+    }
+}
+
+.projeto {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.projeto img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.projeto:hover {
+    transform: scale(1.02);
+}
+
+.projeto h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+/* Estilo das habilidades */
+.habilidades-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.habilidades-list li {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.habilidades-list li:hover {
+    background-color: #333;
+}
+
+.habilidades-list li i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+/* Seção de contato */
+.contato p {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato p i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.link {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+    transition: border-bottom 0.3s ease;
+}
+
+.link:hover {
+    border-bottom: none;
+}
