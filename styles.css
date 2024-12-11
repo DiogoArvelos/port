@@ -28,6 +28,18 @@ body {
 .projeto h3, .projeto p {
     margin-top: 10px;
 }
+.sobre-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espaço entre a imagem e o texto */
+}
+
+.foto-sobre {
+    width: 230px; /* Tamanho da imagem */
+    height: 180px; /* Tamanho da imagem */
+    object-fit: cover; /* Garante que a imagem fique ajustada */
+
+}
 /* Estilo do cabeçalho */
 .header {
     background-color: #000;
