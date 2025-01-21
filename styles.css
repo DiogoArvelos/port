@@ -35,11 +35,13 @@ body {
 }
 
 .foto-sobre {
-    width: 230px; /* Tamanho da imagem */
-    height: 180px; /* Tamanho da imagem */
-    object-fit: cover; /* Garante que a imagem fique ajustada */
-
+    width: 193px; /* Largura da imagem */
+    height: 193px; /* Altura igual à largura para manter o formato circular */
+    object-fit: cover; /* Ajusta a imagem ao tamanho definido */
+    border-radius: 50%; /* Torna a imagem circular */
+    border: 2px solid #000; /* Borda preta */
 }
+
 /* Estilo do cabeçalho */
 .header {
     background-color: #000;
